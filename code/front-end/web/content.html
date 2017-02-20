@@ -14,16 +14,20 @@
   <div class='Top'>
     <div class='TopArea'>
       <div class='weather'>
-        <iframe name="weather_inc" src="http://tianqi.xixik.com/cframe/5" width="155" height="30" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" ></iframe>
+        <!--
+		<iframe name="weather_inc" src="http://tianqi.xixik.com/cframe/5" width="155" height="30" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" ></iframe>
+		-->
       </div>
       <a href='http://www.pm25.in/beijing' target='_blank' class='Pm25A'>
       <div class='Pm25Tit'>| &nbsp;空气质量：</div>
       <div id='Pm25' class='one'>&nbsp;</div>
       </a><a title='返回首页' class='first' href='/'>返回首页</a><a id='homepage' title='设为首页' class='SetHome' href='javascript:SetHomePage()'>设为首页</a><a title='加入收藏' class='AddF' href='javascript:AddFavorite()'>加入收藏</a></div>
   </div>
+  <!--
   <script language='javascript' type='text/javascript' src='http://pv.sohu.com/cityjson?ie=utf-8'></script>
   <script type='text/javascript' src='js/Pm25.js' charset="gb2312"></script>
-  <script>var PublicIP = returnCitySN['cip'];var WzflsPublicIP='60.190.112.19';if(WzflsPublicIP.indexOf(PublicIP)>=0){$('#NetHardDisk').attr('href','http://192.168.15.1');};</script>
+  <scrpt>var PublicIP = returnCitySN['cip'];var WzflsPublicIP='60.190.112.19';if(WzflsPublicIP.indexOf(PublicIP)>=0){$('#NetHardDisk').attr('href','http://192.168.15.1');};</script>
+  -->
   <div class='TopLogo'><a title='现代教育管理中心多媒体教学办公室' class='Logo' href='javascript:void(0)'>&nbsp;</a><span>&nbsp;</span>
     <div class='TopSearch'>
       <form id='form1' method='post' action='#' onSubmit='return TopCheckForm();' name='form1'>
@@ -60,6 +64,28 @@
 			<dt>用户登录与预约</dt>
 			<dd><a href="#" target="_blank">&nbsp;</a></dd>
 		  </dl>
+		  <div class="reservation">
+				<a href="#"><img src="images/reservation.jpg"></a>
+		  </div>
+		  <div class="login">
+			  <form action="#" method="post" accept-charset="utf-8">
+					<div class="form_group">
+						<label class="input_label">用户名:</label>
+						<input class="login_input" type="text" name="name" id="txtUserName" />
+					</div>
+					<div class="form_group">
+						<label class="input_label">密&nbsp;码:</label>
+						<input class="login_input" type="password" name="password" id="txtPwd" />
+					</div>
+					<div class="login_bottom">
+						<input class="button" type="button" name="password" id="login_button" value="登录" />
+						<span><a href="#">注册</a></span>
+						<span>|</span>
+						<span><a href="#">忘记密码</a></span>
+					</div>					
+			  </form>
+			  
+		  </div>
 		</div>
 	  </div>
 	  
