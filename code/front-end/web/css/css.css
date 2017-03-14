@@ -798,5 +798,137 @@ a.more, a.more:link, a.more:visited, a.more:hover {
 	color:#fff;
 	font-size:14px;
 	line-height:15px;
-	padding:10px 0 10px 0;
+	padding:10px 0;
 }
+
+.forum_main {
+	width:970px;
+	margin:10px auto;
+	clear:both;
+	overflow:hidden
+}
+.width-300{
+	width:300px;
+	margin:10px 10px 10px 0;
+}
+.NewsList .forum_dl{
+	float: left;
+    height: 38px;
+    padding-left: 16px;
+    padding-top: 1px;
+    width: 284px;
+}
+.NewsList .forum_ul{
+	float: left;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-top: 7px;
+    width: 268px;
+}
+.forum_ul li{
+	background: rgba(0, 0, 0, 0) url("../images/") no-repeat scroll left center;
+    float: left;
+    height: 26px;
+    line-height: 26px;
+    overflow: hidden;
+    padding-left: 12px;
+    width: 250px;
+}
+.forum_list{
+	background: rgba(0, 0, 0, 0) url("../images/IndexBoxBg.gif") repeat-x scroll 0 0;
+    border: 1px solid #dbdee3;
+    height: auto;
+    width: 968px;
+}
+.forum{
+	margin: 10px auto 0px;
+    width: 960px;
+}
+.a-wrap{
+	border: 1px solid #d4e6fc;
+    margin: 3px auto;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+	width:946px;
+}
+.tr-head{
+	height:29px;	
+}
+.tr-left{
+	width: 175px;
+    border-right: 1px solid #d4e6fc;
+	padding-left:10px;
+	background-color: #f3f5fc;
+	
+}
+.position-top{
+	vertical-align: top;
+}
+.tr-right{
+	width: 724px;
+	padding-left:30px;
+}
+.tr-right .title{
+	font-weight: bold;
+	color: #555555;
+    font-family: Î¢ÈíÑÅºÚ;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 29px;
+}
+.top-margin-0{
+	margin:0px auto;
+}
+.border-bottom{
+	border-bottom: 1px dashed #CDCDCD;
+}
+
+.tr-head .pos{
+	float: right;
+    font-size: 12px;
+    color: #2244bb;
+    padding-right: 15px;
+}
+
+.user-photo img{
+	width: 157px;
+	height:157px;
+    border: 1px solid #CCC;
+    padding: 2px;
+	margin-top:5px;
+	
+
+    
+}
+.tr-content img{
+	max-width:750px;
+}
+.tr-bottom{
+	height:30px;
+}
+.tr-bottom  img{
+	height:20px;
+	width:20px;
+	padding:5px;
+}
+
+.tr-bottom a{
+	line-height:30px;
+	text-decoration:none;
+	color: #555555;
+}
+table{
+	border:0;
+	border-collapse:collapse;
+}
+.forum_top_left{
+	width: 185px;
+	height:30px;
+	border:1px solid red;
+	margin-left:7px;
+}
+
+
+
+    
