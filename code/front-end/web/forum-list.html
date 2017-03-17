@@ -8,34 +8,42 @@
 <script type='text/javascript' src='js/myfocus.js' charset="utf-8"></script>
 <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
 <script src="js/jquery.nav.js" type="text/javascript"></script>
+<script src="js/kindeditor/kindeditor-all-min.js" charset="utf-8"></script>
+<script src="js/kindeditor/lang/zh_CN.js" charset="utf-8"></script>
+<script>
+KindEditor.ready(function(K) {
+	window.editor = K.create('#content');
+});
+</script>
 </head>
 <body>
 <div class="header">
-  <div class='Top'>
-    <div class='TopArea'>
-      <div class='weather'>
-        <!--
-		<iframe name="weather_inc" src="http://tianqi.xixik.com/cframe/5" width="155" height="30" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" ></iframe>
-		-->
-      </div>
-      <a href='http://www.pm25.in/beijing' target='_blank' class='Pm25A'>
-      <div class='Pm25Tit'>| &nbsp;空气质量：</div>
-      <div id='Pm25' class='one'>&nbsp;</div>
-      </a><a title='返回首页' class='first' href='/'>返回首页</a><a id='homepage' title='设为首页' class='SetHome' href='javascript:SetHomePage()'>设为首页</a><a title='加入收藏' class='AddF' href='javascript:AddFavorite()'>加入收藏</a></div>
-  </div>
+	<div class='Top'>
+		<div class='TopArea'>
+			  <div class='weather'>
+				<!--
+				<iframe name="weather_inc" src="http://tianqi.xixik.com/cframe/5" width="155" height="30" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" ></iframe>
+				-->
+			  </div>
+			  <a href='http://www.pm25.in/beijing' target='_blank' class='Pm25A'>
+			  <div class='Pm25Tit'>| &nbsp;空气质量：</div>
+			  <div id='Pm25' class='one'>&nbsp;</div>
+			  </a><a title='返回首页' class='first' href='/'>返回首页</a><a id='homepage' title='设为首页' class='SetHome' href='javascript:SetHomePage()'>设为首页</a><a title='加入收藏' class='AddF' href='javascript:AddFavorite()'>加入收藏</a>
+		</div>
+	</div>
   <!--
   <script language='javascript' type='text/javascript' src='http://pv.sohu.com/cityjson?ie=utf-8'></script>
   <script type='text/javascript' src='js/Pm25.js' charset="gb2312"></script>
   <script>var PublicIP = returnCitySN['cip'];var WzflsPublicIP='60.190.112.19';if(WzflsPublicIP.indexOf(PublicIP)>=0){$('#NetHardDisk').attr('href','http://192.168.15.1');};</script>
   -->
-  <div class='TopLogo'><a title='现代教育管理中心多媒体教学办公室' class='Logo' href='javascript:void(0)'>&nbsp;</a><span>&nbsp;</span>
-    <div class='TopSearch'>
-      <form id='form1' method='post' action='#' onSubmit='return TopCheckForm();' name='form1'>
-        <input id='Keyword' data='请输入搜索关键字' name='Keyword' value='请输入搜索关键字' type='text' />
-        <input class='TopBtn' type='submit' name='提交' value=' ' />
-      </form>
-    </div>
-  </div>
+	<div class='TopLogo'><a title='现代教育管理中心多媒体教学办公室' class='Logo' href='javascript:void(0)'>&nbsp;</a><span>&nbsp;</span>
+			<div class='TopSearch'>
+				  <form id='form1' method='post' action='#' onSubmit='return TopCheckForm();' name='form1'>
+					<input id='Keyword' data='请输入搜索关键字' name='Keyword' value='请输入搜索关键字' type='text' />
+					<input class='TopBtn' type='submit' name='提交' value=' ' />
+				  </form>
+			</div>
+	 </div>
 </div>
 <div id="nav">
   <div class="navc"> <a href="#">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a> <a href="#">平台简介</a> <a href="#">制度手册</a> <a href="#">论坛互动</a> <a href="#">联系我们</a></div>
@@ -52,7 +60,7 @@
 						<tbody>
 							<tr class="tr-head">
 								<td class="forum_top_left">
-									<a href="#"><img src="./images/pn_post.png"></a>
+									<a href="forum-post.html"><img src="./images/pn_post.png" alt="发帖"></a>
 								</td>
 								<td class="forum_top_right">
 									<div class="float-right">
@@ -125,7 +133,7 @@
 								<td class="tr-left">
 								</td>
 								<td class="tr-right ">
-									<a href="#"><img src="images/answer.jpg">回复</a>
+									<a href="javascript:;" class="tr-replay"><img src="images/answer.jpg">回复</a>
 								</td>
 							</tr>
 						</tbody>
@@ -166,7 +174,7 @@
 								<td class="tr-left">
 								</td>
 								<td class="tr-right ">
-									<a href="#"><img src="images/answer.jpg">回复</a>
+									<a href="javascript:;" class="tr-replay"><img src="images/answer.jpg">回复</a>
 								</td>
 							</tr>
 						</tbody>
@@ -207,7 +215,7 @@
 								<td class="tr-left">
 								</td>
 								<td class="tr-right ">
-									<a href="#"><img src="images/answer.jpg">回复</a>
+									<a href="javascript:;" class="tr-replay"><img src="images/answer.jpg">回复</a>
 								</td>
 							</tr>
 						</tbody>
@@ -249,54 +257,102 @@
 								<td class="tr-left">
 								</td>
 								<td class="tr-right ">
-									<a href="#"><img src="images/answer.jpg">回复</a>
+									<a href="javascript:;" class="tr-replay"><img src="images/answer.jpg">回复</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				
+			</div>
+			<div class="forum">
+				
+					<table>
+						<tbody>
+							<tr class="tr-head">
+								<td class="forum_top_left">
+									<a href="forum-post.html"><img src="./images/pn_post.png" alt="发帖"></a>
+								</td>
+								<td class="forum_top_right">
+									<div class="float-right">
+										<a href="#" class="Go-Back">返回列表</a>
+										<a href="#" class="width-25"><img src="./images/flip1.jpg"></a>
+										<a href="#" class="width-25 current">1</a>
+										<a href="#" class="width-25">2</a>
+										<a href="#" class="width-25">3</a>
+										<label><input class="px"><span> / 4 页</span></label>
+										<a href="#" class="width-25"><img src="./images/flip2.jpg"></a>
+									</div>
 								</td>
 							</tr>
 						</tbody>
 					</table>
 				</div>
 			</div>
-			<div class="fanye">
-				<span>共XX页，当前第X页</span>
-				<span><a href="#">第一页</a></span>
-				<span><a href="#">上一页</a></span>
-				<span><a href="#">下一页</a></span>
-				<span><a href="#">最后一页</a></span>
+			<div class="forum">
+				<div class="a-wrap">
+					<table>
+						<tbody>
+							<tr class="tr-body">
+								<td class="tr-left position-top">
+									<div class="user-photo "><img src="images/logo.jpg"></div>
+								</td>
+								<td class="tr-editor">
+									<textarea id="content" style="width: 740px; height: 300px; display: none;" name="content"></textarea>
+									<div class="submit">
+										<button type="submit">发表回复</button>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
+	
+</div>
+
+		
+		<div class="replay display-none">
+			<div class="replay-head">
+				<h1>参与/回复主题</h1>
+				<span><a href="javascript:;"><img src="images/close.jpg" alt="取消按钮"> </a></span>
+			</div>
+			<div class="replay-content">
+				<div class="replay-title">RE:asdfaadgfdsgewrgrewghsdifhweorfwoeruoweifoweuroiewjowejroqjroewjroqwjeoqwjrowejroqjrojreoiqwjowqjroejroqw</div>
+				<div class="replay-list">"win发表于 2017-03-07 12:01 <br>大爷好腻害的样子<br></div>
+			</div>
+			<div class="replay-editor">
+				dewdewdfsdfdsdg<br>dewdewdfsdfdsdg<br>dewdewdfsdfdsdg<br>dewdew
+			</div>
+			<div class="replay-submit">
+				<form action="#" method="post" accept-charset="utf-8">
+					<button type="submit">参与/回复主题</button>
+				</form>
 			</div>
 		</div>
+		
 
  
- </div>
 <div class="footer">
   <div class="center">
     <p>重庆三峡学院生命科学与工程学院 (C) 版权所有 2013</p>
 	<p>地址：重庆市xxx区xx路xxx号</p>
   </div>
 </div>
-<script type="text/javascript" src="js/jquery-jcMarquee.js"></script>
 <script>
-	var tabNav = document.getElementsByClassName("tabNav")[0];
-	var tabLi = tabNav.getElementsByTagName("li");
-
-	var tabDiv = document.getElementsByClassName("tabDiv");
-
-	for(var i = 0; i < tabLi.length; i++){
-		tabLi[i].index = i;
-		tabLi[i].onmouseover = function(){
-			for(var j = 0; j < tabLi.length; j++){
-				tabLi[j].className='';
-				tabDiv[j].className='hide tabDiv';	
-			}
-			this.className='border-bottom';
-			tabDiv[this.index].className = 'tabDiv';
-			
+	//zyy
+	var Oa = document.getElementsByClassName("tr-replay");
+	var replay_box = document.getElementsByClassName("replay")[0];
+	for (var j = 0; j < Oa.length; j++){
+		Oa[j].onclick = function(){
+			replay_box.className = 'replay';			
 		}
 	}
+	var closeImg = document.getElementsByClassName("replay-head")[0].getElementsByTagName("a")[0];
+	closeImg.onclick = function(){
+			replay_box.className = 'replay display-none';
+	}
 	
-	$(function(){
-		$('#Marquee_x').jcMarquee({ 'marquee':'x','speed':20 });
-	});
-
 </script>
 </body>
 </html>

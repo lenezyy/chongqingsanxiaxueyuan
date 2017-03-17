@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>重庆三峡学院创新开放性实践网络平台</title>
+<link href='css/css.css' rel='stylesheet' type='text/css' />
+<script type='text/javascript' src='js/cnvp.js' charset="utf-8"></script>
+<script type='text/javascript' src='js/myfocus.js' charset="utf-8"></script>
+<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="js/jquery.nav.js" type="text/javascript"></script>
+<script src="js/kindeditor/kindeditor-all-min.js" charset="utf-8"></script>
+<script src="js/kindeditor/lang/zh_CN.js" charset="utf-8"></script>
+<script>
+KindEditor.ready(function(K) {
+	window.editor = K.create('#content');
+});
+</script>
+</head>
+<body>
+<div class="header">
+  <div class='Top'>
+    <div class='TopArea'>
+      <div class='weather'>
+        <!--
+		<iframe name="weather_inc" src="http://tianqi.xixik.com/cframe/5" width="155" height="30" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" ></iframe>
+		-->
+      </div>
+      <a href='http://www.pm25.in/beijing' target='_blank' class='Pm25A'>
+      <div class='Pm25Tit'>| &nbsp;空气质量：</div>
+      <div id='Pm25' class='one'>&nbsp;</div>
+      </a><a title='返回首页' class='first' href='/'>返回首页</a><a id='homepage' title='设为首页' class='SetHome' href='javascript:SetHomePage()'>设为首页</a><a title='加入收藏' class='AddF' href='javascript:AddFavorite()'>加入收藏</a></div>
+  </div>
+  <!--
+  <script language='javascript' type='text/javascript' src='http://pv.sohu.com/cityjson?ie=utf-8'></script>
+  <script type='text/javascript' src='js/Pm25.js' charset="gb2312"></script>
+  <script>var PublicIP = returnCitySN['cip'];var WzflsPublicIP='60.190.112.19';if(WzflsPublicIP.indexOf(PublicIP)>=0){$('#NetHardDisk').attr('href','http://192.168.15.1');};</script>
+  -->
+  <div class='TopLogo'><a title='现代教育管理中心多媒体教学办公室' class='Logo' href='javascript:void(0)'>&nbsp;</a><span>&nbsp;</span>
+    <div class='TopSearch'>
+      <form id='form1' method='post' action='#' onSubmit='return TopCheckForm();' name='form1'>
+        <input id='Keyword' data='请输入搜索关键字' name='Keyword' value='请输入搜索关键字' type='text' />
+        <input class='TopBtn' type='submit' name='提交' value=' ' />
+      </form>
+    </div>
+  </div>
+</div>
+<div id="nav">
+  <div class="navc"> <a href="#">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a> <a href="#">平台简介</a> <a href="#">制度手册</a> <a href="#">论坛互动</a> <a href="#">联系我们</a></div>
+</div>
+
+<div class="main margin-top">
+		<div class="forum_list">
+			<div class="list-header">
+				<span>您当前位置：<a href="index.html">&nbsp;首页&nbsp;</a> >> <a href="list.html">&nbsp;通知公告 </a></span>
+			</div>
+			<form>
+				<div class="post-box">
+					<div class="post-hend">				
+							<select >
+								<option select>选择主题</option>
+								<option >zyy loves darye</option>
+								<option >darye loves zyy</option>
+								<option >大爷最近辛苦了</option>
+								<option >大爷是我的男神,越来越帅了</option>
+							</select>
+							<input type="text" name="title" maxlength="50">
+							<span>最大长度为50个字符</span>			
+					</div>
+					<textarea id="content" style="width: 940px; height: 400px; display: none;" name="content"></textarea>
+					<button type="submit">发表帖子</button>
+				</div>
+			</form>
+		</div>
+		
+ 
+ </div>
+<div class="footer">
+  <div class="center">
+    <p>重庆三峡学院生命科学与工程学院 (C) 版权所有 2013</p>
+	<p>地址：重庆市xxx区xx路xxx号</p>
+  </div>
+</div>
+<script type="text/javascript" src="js/jquery-jcMarquee.js"></script>
+<script>
+	var tabNav = document.getElementsByClassName("tabNav")[0];
+	var tabLi = tabNav.getElementsByTagName("li");
+
+	var tabDiv = document.getElementsByClassName("tabDiv");
+
+	for(var i = 0; i < tabLi.length; i++){
+		tabLi[i].index = i;
+		tabLi[i].onmouseover = function(){
+			for(var j = 0; j < tabLi.length; j++){
+				tabLi[j].className='';
+				tabDiv[j].className='hide tabDiv';	
+			}
+			this.className='border-bottom';
+			tabDiv[this.index].className = 'tabDiv';
+			
+		}
+	}
+	
+	$(function(){
+		$('#Marquee_x').jcMarquee({ 'marquee':'x','speed':20 });
+	});
+
+</script>
+</body>
+</html>
